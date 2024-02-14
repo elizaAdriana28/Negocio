@@ -2,7 +2,7 @@ from django.db import models
 
 class Producto (models.Model):
     id_producto = models.BigAutoField(primary_key=True)
-    precio = models.IntegerField(verbose_name='Precio')
+    precio = models.CharField(verbose_name='Precio')
     tipo_producto = models.CharField( max_length=255,verbose_name='Tipo de producto')
     
 
