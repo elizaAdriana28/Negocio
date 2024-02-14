@@ -31,58 +31,13 @@
 </head>
 <!-- END HEAD -->
 
-<link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-sidebar-closed page-md">
     <div class="page-wrapper">
         <!-- BEGIN HEADER -->
-        <div class="page-header navbar navbar-fixed-top">
-            <!-- BEGIN HEADER INNER -->
-            <div class="page-header-inner ">
-                <!-- BEGIN LOGO -->
-                <div class="page-logo">
-
-                    <div class="menu-toggler sidebar-toggler ">
-                        <span></span>
-                    </div>
-                </div>
-                <a href="javascript:; " class="menu-toggler responsive-toggler " data-toggle="collapse " data-target=".navbar-collapse ">
-                    <span></span>
-                </a>
-
-                <div class="top-menu ">
-                    <ul class="nav navbar-nav pull-right ">
-                      {% if user.is_authenticated %}
-                        <li class="dropdown dropdown-user">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
-                             <span                    span class="username username-hide-on-mobile"> {{user.name}} </span>
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                    <ul class="dropdown-menu dropdown-menu-default">
-
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-key"></i> Cerrar sesión </a>
-                                </li>
-                                {% else %}
-
-                                <li class="dropdown dropdown-user">
-                                    <a href="#" class="dropdown-toggle">
-                                         Iniciar Sesión 
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-default">
-
-                                        {% endif %}
-
-
-                                    </ul>
-                            </ul>
-                    </ul>
-                </div>
-            </div>
-        </div>
+       
         <div class="clearfix "> </div>
         <div class="page-container ">
 
